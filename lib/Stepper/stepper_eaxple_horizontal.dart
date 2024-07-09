@@ -38,72 +38,65 @@ class _stephorscreenState extends State<stephorscreen> {
           style: TextStyle(color: Colors.white),
         ),
       ),
-      body: SingleChildScrollView(
+      body: Stepper(
+        type: StepperType.horizontal,
+          currentStep:currntStep ,
 
-        child: Column(
-          children: [
-            Stepper(
-              // type: StepperType.horizontal,
-                currentStep:currntStep ,
-
-                onStepContinue: continueStep,
-                onStepCancel: cancelStep,
+          onStepContinue: continueStep,
+          onStepCancel: cancelStep,
 
 
-                steps: [
-                  Step(
-                      title: Text('Account'),
-                      content: TextFormField(
-                        decoration: InputDecoration(
-                        enabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(15),
-                          borderSide: BorderSide(width: 1, color: Colors.black),
-                        ),
-                        focusedBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(15),
-                          borderSide: BorderSide(width: 2, color: Colors.purple),
-                        ),
-                        label: Text('Accoount Number'),
-                      ),),
-
+          steps: [
+            Step(
+                title: Text('Account'),
+                content: TextFormField(
+                  decoration: InputDecoration(
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(15),
+                    borderSide: BorderSide(width: 1, color: Colors.black),
                   ),
-                  Step(
-                      title: Text('Address'),
-                    content: TextFormField(
-                      minLines: 1,
-                      maxLines: 10,
-                      decoration: InputDecoration(
-
-                        enabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(15),
-                          borderSide: BorderSide(width: 1, color: Colors.black),
-                        ),
-                        focusedBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(15),
-                          borderSide: BorderSide(width: 2, color: Colors.purple),
-                        ),
-                        label: Text('Address'),
-                      ),),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(15),
+                    borderSide: BorderSide(width: 2, color: Colors.purple),
                   ),
-                  Step(
-                      title: Text('Mobile Number'),
-                    content: TextFormField(
-                      decoration: InputDecoration(
-                        enabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(15),
-                          borderSide: BorderSide(width: 1, color: Colors.black),
-                        ),
-                        focusedBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(15),
-                          borderSide: BorderSide(width: 2, color: Colors.purple),
-                        ),
-                        label: Text('Moblie Number'),
-                      ),),
-                    ),
-                ])
-          ],
-        ),
-      ),
+                  label: Text('Accoount Number'),
+                ),),
+
+            ),
+            Step(
+                title: Text('Address'),
+              content: TextFormField(
+                minLines: 1,
+                maxLines: 10,
+                decoration: InputDecoration(
+
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(15),
+                    borderSide: BorderSide(width: 1, color: Colors.black),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(15),
+                    borderSide: BorderSide(width: 2, color: Colors.purple),
+                  ),
+                  label: Text('Address'),
+                ),),
+            ),
+            Step(
+                title: Text('Mobile Number'),
+              content: TextFormField(
+                decoration: InputDecoration(
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(15),
+                    borderSide: BorderSide(width: 1, color: Colors.black),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(15),
+                    borderSide: BorderSide(width: 2, color: Colors.purple),
+                  ),
+                  label: Text('Moblie Number'),
+                ),),
+              ),
+          ]),
 
     );
   }
