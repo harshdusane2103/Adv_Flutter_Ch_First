@@ -18,9 +18,12 @@
 
 <h1 align="center"> #️⃣Provider Tree #️⃣</h1>
 <P>
-```bash
+  
+ ```bash
+
   <img src="https://github.com/harshdusane2103/Adv_Flutter_Ch_First/assets/161817658/16cdf6ad-5f76-46ee-8e11-5ae4f12eeae9">
-  ````
+
+ ```
 </P>
 
 
