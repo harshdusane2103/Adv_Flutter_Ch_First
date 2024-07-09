@@ -11,7 +11,7 @@
 <P>
   <img src="https://github.com/harshdusane2103/Adv_Flutter_Ch_First/blob/master/img1.png" width=21%,heigth=35%>
    <img src="https://github.com/harshdusane2103/Adv_Flutter_Ch_First/blob/master/img2.png" width=21%,heigth=35%>
-   <vedio src="https://github.com/harshdusane2103/Adv_Flutter_Ch_First/assets/161817658/699df70f-1c9c-489a-be31-1cabeab61c49"></vedio>
+   https://github.com/harshdusane2103/Adv_Flutter_Ch_First/assets/161817658/699df70f-1c9c-489a-be31-1cabeab61c49
   
 
 </P>
