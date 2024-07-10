@@ -24,9 +24,21 @@
 
 </P>
 <h3 align="center">⚡Provider⚡</h3>
+<h2>State Meangment :</h2>
 <p>
-  <h4>Defination</h4>
-      ```bash
+  ```bash
+  
+                                           State Management :
+                                           => State management in Dart and Flutter is all about managing the data that the app will render and how it will respond to user input.
+                                           State :
+                                           => State is information that (1) can be read synchronously when the widget is built and (2) might change during the lifetime of the widget.
+                                           SetState :
+                                          => Rebuild the our stateful or stateless widget build method.
+  ```
+</p>
+<p>
+  <h2>Defination :</h2>
+ ```bash
   
         Provider is a Flutter library created by the community that simplifies the management of stateful information in widgets. 
         It's designed to work well with Flutter's reactive framework, allowing you to propagate and consume changes to state efficiently
