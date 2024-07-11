@@ -87,5 +87,18 @@
 
 
 </P>
+<h3 align="center">⚡Quotes Data Solving with Provider⚡</h3>
+
+<P>
+  <img src="https://github.com/harshdusane2103/Adv_Flutter_Ch_First/blob/master/harsh.png" width=21%,heigth=35%>
+   <img src="https://github.com/harshdusane2103/Adv_Flutter_Ch_First/blob/master/dialogimg.png" width=21%,heigth=35%>
+  <video src="https://github.com/harshdusane2103/Adv_Flutter_Ch_First/assets/161817658/b452531f-f9b9-4e96-96b4-fa98c1bc1e71"></video>
+
+
+</P>
+
+
+
+
 
 
