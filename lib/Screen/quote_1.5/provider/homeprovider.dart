@@ -208,15 +208,26 @@ class  QuoteProvider extends ChangeNotifier
     {
       "quote":"If you can dream it, you can achieve it.","author":"Zig Ziglar"}
   ];
-  void addData(int index)
+  List<controllerModal> QuotefinalList=[];
+  QuoteProvider()
   {
-    QuoteData.add({'Quote':txtquote,'Athour':txtAthour});
+    StoreData();
+  }
+  void addData(controllerModal  addData)
+  {
+    QuotefinalList.insert(0,addData);
     notifyListeners();
   }
   void removeData(int index)
   {
-    QuoteData.removeAt(index);
+    QuotefinalList.removeAt(index);
     notifyListeners();
   }
+  void StoreData()
+  {
+    QuotefinalList=QuoteData.map((e) => controllerModal.from(e),).toList();
+    notifyListeners();
+  }
+
 
 }
