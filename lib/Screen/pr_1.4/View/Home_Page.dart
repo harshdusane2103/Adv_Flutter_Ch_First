@@ -35,7 +35,7 @@ class HomePage extends StatelessWidget {
                       : Icons.sunny,color: Theme.of(context).colorScheme.primary,size: 24,),
                   SizedBox(width: 20,),
                   Text('Dark Mode',style:TextStyle(fontSize: 24),),
-                  SizedBox(width: 170,),
+                  SizedBox(width: 145,),
                   Switch(value: homeProvidertrue.isDark, onChanged: (value){
                     homeProviderfalse.Themechange();
                   }),
