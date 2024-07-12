@@ -96,6 +96,15 @@
 
 
 </P>
+<h3 align="center">⚡Quotes Data Solving with Provider⚡</h3>
+
+<P>
+  
+  <video src="https://github.com/user-attachments/assets/5446637c-a180-4eab-8b51-c78a05cb815b"></video>
+
+
+
+</P>
 
 
 
