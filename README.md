@@ -96,7 +96,7 @@
 
 
 </P>
-<h3 align="center">⚡Quotes Data Solving with Provider⚡</h3>
+<h3 align="center">⚡One Time Intro Screen in Flutter ⚡</h3>
 
 <P>
   
