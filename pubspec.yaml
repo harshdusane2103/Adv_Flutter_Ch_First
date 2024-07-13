@@ -36,6 +36,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.6
   provider: ^6.1.2
+  shared_preferences: ^2.2.3
 
 
 dev_dependencies:
@@ -67,6 +68,9 @@ flutter:
   assets:
     - asstes/image/hd.jpeg
     - asstes/image/harsh.jpg
+    - asstes/image/image1.png
+    - asstes/image/image2.png
+    - asstes/image/image3.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
