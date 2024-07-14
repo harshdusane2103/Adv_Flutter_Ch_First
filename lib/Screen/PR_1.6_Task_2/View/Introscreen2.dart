@@ -1,3 +1,4 @@
+import 'package:adv_fullter_ch1/Screen/PR_1.6_Task_2/View/Introscreen3.dart';
 import 'package:adv_fullter_ch1/Utils/color.dart';
 import 'package:flutter/material.dart';
 class IntroScreen2 extends StatelessWidget {
@@ -31,7 +32,7 @@ class IntroScreen2 extends StatelessWidget {
 
             ),
             SizedBox(height: 10,),
-            Text('Delivery to your home',style: TextStyle(color: primaryColor,fontWeight: FontWeight.bold,fontSize: 32),),
+            Text('Prepared by exparets',style: TextStyle(color: primaryColor,fontWeight: FontWeight.bold,fontSize: 32),),
             SizedBox(height: 20,),
             Text('Delicious meals, delivered fast.Welcome to your ',style: TextStyle(color: primaryColor,fontSize: 18),),
             Text(' new favorite way to dine.',style: TextStyle(color: primaryColor,fontSize: 18),),
@@ -48,14 +49,19 @@ class IntroScreen2 extends StatelessWidget {
                   ),
                   child: Center(child: Text('Skip',style: TextStyle(color: primaryColor,fontWeight: FontWeight.bold),)),
                 ),
-                Container(
-                  height: 60,
-                  width: 120,
-                  decoration: BoxDecoration(
-                      color: primaryColor,
-                      borderRadius: BorderRadius.only(topLeft: Radius.circular(25),bottomLeft: Radius.circular(25))
+                InkWell( onTap: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => IntroScreen3()));
+                },
+                  child: Container(
+                    height: 60,
+                    width: 120,
+                    decoration: BoxDecoration(
+                        color: primaryColor,
+                        borderRadius: BorderRadius.only(topLeft: Radius.circular(25),bottomLeft: Radius.circular(25))
+                    ),
+                    child: Center(child: Text('Next',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),)),
                   ),
-                  child: Center(child: Text('Next',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),)),
                 ),
               ],
             )

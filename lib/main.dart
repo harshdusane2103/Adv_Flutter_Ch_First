@@ -6,9 +6,12 @@
 
 
 
+import 'package:adv_fullter_ch1/Screen/PR_1.6_Task_2/Provider/Introprovider.dart';
 import 'package:adv_fullter_ch1/Screen/PR_1.6_Task_2/View/IntroScreen.dart';
 import 'package:adv_fullter_ch1/Screen/PR_1.6_Task_2/View/Introscreen2.dart';
+import 'package:adv_fullter_ch1/Screen/PR_1.6_Task_2/View/splash.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 
 
@@ -52,12 +55,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      routes: {
-        '/':(context)=>IntroScreen1(),
-        '/intro':(context)=>IntroScreen2(),
-      },
+    return ChangeNotifierProvider(
+      create: (context)=>IntroProvider(),
+      builder: (context,child)=>
+       MaterialApp(
+        debugShowCheckedModeBanner: false,
+        routes: {
+          '/':(context)=>SplashScreen(),
+
+        },
+      ),
     );
   }
 }

@@ -71,6 +71,7 @@ flutter:
     - asstes/image/image1.png
     - asstes/image/image2.png
     - asstes/image/image3.png
+    - asstes/image/logo.jpeg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
