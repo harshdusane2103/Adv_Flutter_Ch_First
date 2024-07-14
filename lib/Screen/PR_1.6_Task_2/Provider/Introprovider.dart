@@ -17,7 +17,9 @@ class IntroProvider extends ChangeNotifier
     notifyListeners();
   }
 
-  IntroProvider() {
-    getValues();
+  IntroProvider(bool theme) {
+    isClicked=theme;
+    notifyListeners();
+
   }
 }

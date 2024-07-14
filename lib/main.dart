@@ -7,11 +7,12 @@
 
 
 import 'package:adv_fullter_ch1/Screen/PR_1.6_Task_2/Provider/Introprovider.dart';
+import 'package:adv_fullter_ch1/Screen/PR_1.6_Task_2/View/HomeScreen.dart';
 import 'package:adv_fullter_ch1/Screen/PR_1.6_Task_2/View/IntroScreen.dart';
-import 'package:adv_fullter_ch1/Screen/PR_1.6_Task_2/View/Introscreen2.dart';
-import 'package:adv_fullter_ch1/Screen/PR_1.6_Task_2/View/splash.dart';
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 
 
@@ -46,25 +47,26 @@ import 'package:provider/provider.dart';
 //   }
 //
 // }
-void main()
-{
-  runApp(MyApp());
+Future<void> main()
+async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+   SharedPreferences sharedPreferences= await SharedPreferences.getInstance();
+  bool theme =sharedPreferences.getBool('theme')?? false;
+  runApp(ChangeNotifierProvider(
+      create:(context)=>IntroProvider(theme),
+      child: MyApp()));
 }
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      create: (context)=>IntroProvider(),
-      builder: (context,child)=>
-       MaterialApp(
+    return
+      MaterialApp(
         debugShowCheckedModeBanner: false,
-        routes: {
-          '/':(context)=>SplashScreen(),
+        home:Provider.of<IntroProvider>(context, listen: false).isClicked ?HomeScreen() :IntroScreen1(),
+      );
 
-        },
-      ),
-    );
   }
 }
