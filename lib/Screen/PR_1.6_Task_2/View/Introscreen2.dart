@@ -21,8 +21,8 @@ class IntroScreen2 extends StatelessWidget {
         child: Column(
           children: [
             Container(
-              height: 420,
-              width: 380,
+              height: 360,
+              width: 360,
               decoration: BoxDecoration(
                   image: DecorationImage(
                     fit: BoxFit.cover,
@@ -36,7 +36,7 @@ class IntroScreen2 extends StatelessWidget {
             SizedBox(height: 20,),
             Text('Delicious meals, delivered fast.Welcome to your ',style: TextStyle(color: primaryColor,fontSize: 18),),
             Text(' new favorite way to dine.',style: TextStyle(color: primaryColor,fontSize: 18),),
-            SizedBox(height: 100,),
+            SizedBox(height: 80,),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [

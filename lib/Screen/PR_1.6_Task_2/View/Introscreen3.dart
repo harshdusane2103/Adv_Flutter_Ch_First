@@ -59,8 +59,7 @@ class IntroScreen3 extends StatelessWidget {
               children: [
                 InkWell(
                   onTap: () {
-                    Provider.of<IntroProvider>(context, listen: false)
-                        .setvalues();
+                    Provider.of<IntroProvider>(context, listen: false).setvalues();
                     ;
                     Navigator.of(context).pushReplacement(MaterialPageRoute(
                         builder: (context) =>  HomeScreen()));

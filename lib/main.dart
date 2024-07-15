@@ -47,15 +47,13 @@ import 'package:shared_preferences/shared_preferences.dart';
 //   }
 //
 // }
-void main()
-{
-// async {
-//   WidgetsFlutterBinding.ensureInitialized();
-//
-//    SharedPreferences sharedPreferences= await SharedPreferences.getInstance();
-//   bool theme =sharedPreferences.getBool('theme')?? false;
-  runApp(ChangeNotifierProvider(
-      create:(context)=>IntroProvider(),
+Future<void> main()
+async {
+  WidgetsFlutterBinding.ensureInitialized();
+  SharedPreferences preferences = await SharedPreferences.getInstance();
+
+ bool shows = preferences.getBool('viewed') ?? false;  runApp(ChangeNotifierProvider(
+      create:(context)=>IntroProvider(shows),
       child: MyApp()));
 }
 class MyApp extends StatelessWidget {
