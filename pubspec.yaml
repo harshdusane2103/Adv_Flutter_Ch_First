@@ -37,6 +37,8 @@ dependencies:
   cupertino_icons: ^1.0.6
   provider: ^6.1.2
   shared_preferences: ^2.2.3
+  share_plus: ^9.0.0
+  url_launcher: ^6.3.0
 
 
 dev_dependencies:
@@ -72,6 +74,9 @@ flutter:
     - asstes/image/image2.png
     - asstes/image/image3.png
     - asstes/image/logo.jpeg
+    - asstes/image/git.png
+    - asstes/image/link.png
+    - asstes/image/insta.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
