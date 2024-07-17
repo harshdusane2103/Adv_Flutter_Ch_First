@@ -1,7 +1,9 @@
 
-import 'package:adv_fullter_ch1/Screen/Interaction/Provider/InteractionProvider.dart';
+import 'package:adv_fullter_ch1/Screen/Gallray/Provider/provider.dart';
+import 'package:adv_fullter_ch1/Screen/Gallray/View/gallrayscreen.dart';
+
 import 'package:flutter/material.dart';
-import 'package:adv_fullter_ch1/Screen/Interaction/View/InteractionScreen.dart';
+
 import 'package:provider/provider.dart';
 void main()
 {
@@ -13,12 +15,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      create: (context)=>IntractionProvider(),
+      create: (context)=>GalleryProvider(),
 
       builder:(context,child) =>MaterialApp(
 
         debugShowCheckedModeBanner: false,
-        home: InteractionSceen(),
+        home: GallrayScreen(),
       ),
     );
   }

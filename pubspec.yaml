@@ -39,6 +39,7 @@ dependencies:
   shared_preferences: ^2.2.3
   share_plus: ^9.0.0
   url_launcher: ^6.3.0
+  local_auth: ^2.2.0
 
 
 dev_dependencies:
@@ -77,6 +78,34 @@ flutter:
     - asstes/image/git.png
     - asstes/image/link.png
     - asstes/image/insta.png
+    - asstes/image/g1.webp
+    - asstes/image/g2.webp
+    - asstes/image/g3.webp
+    - asstes/image/g4.webp
+    - asstes/image/g5.webp
+    - asstes/image/g6.webp
+    - asstes/image/g7.webp
+    - asstes/image/g8.webp
+    - asstes/image/g9.webp
+    - asstes/image/g10.webp
+    - asstes/image/g11.webp
+    - asstes/image/h1.webp
+    - asstes/image/h2.webp
+    - asstes/image/h3.webp
+    - asstes/image/h4.webp
+    - asstes/image/h5.webp
+    - asstes/image/h6.webp
+    - asstes/image/h7.webp
+    - asstes/image/h8.webp
+    - asstes/image/h9.webp
+    - asstes/image/h10.webp
+    - asstes/image/h11.webp
+    - asstes/image/h12.webp
+    - asstes/image/h13.webp
+    - asstes/image/h14.webp
+    - asstes/image/h15.webp
+    - asstes/image/h16.webp
+
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
