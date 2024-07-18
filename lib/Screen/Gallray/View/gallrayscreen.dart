@@ -2,7 +2,7 @@
 
 import 'package:adv_fullter_ch1/Screen/Gallray/Modal/modal.dart';
 import 'package:adv_fullter_ch1/Screen/Gallray/Provider/provider.dart';
-import 'package:adv_fullter_ch1/Screen/pr_1.4/View/Hidden_photos.dart';
+import 'package:adv_fullter_ch1/Screen/Gallray/View/Hidden_photos.dart';
 import 'package:flutter/material.dart';
 
 import 'package:provider/provider.dart';

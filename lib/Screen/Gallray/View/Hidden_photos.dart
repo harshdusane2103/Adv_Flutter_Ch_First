@@ -11,7 +11,7 @@ class HiddenScreen extends StatelessWidget {
       appBar: AppBar(
         leading: Icon(Icons.menu),
         centerTitle: true,
-        title: Text('Recent'),
+        title: Text('Hidden'),
         actions: [
           Icon(Icons.search),
           Icon(Icons.more_vert),
