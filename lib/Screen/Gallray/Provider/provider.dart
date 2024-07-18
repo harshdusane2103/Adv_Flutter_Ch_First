@@ -1,25 +1,34 @@
 
 
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/services.dart';
 import 'package:local_auth/local_auth.dart';
 
 
 
 class GalleryProvider extends ChangeNotifier {
-  final auth = LocalAuthentication();
-  bool isVerified = false;
 
-  Future<void> authentication() async {
-    bool isDeviceSupport = await auth.isDeviceSupported();
-    bool isActive = await auth.canCheckBiometrics;
 
-    if (isDeviceSupport && isActive) {
-      await auth.authenticate(localizedReason: 'Authentication Needed!');
-      isVerified = true;
+  final localAuth = LocalAuthentication();
+  bool didAuthenticate = false;
+
+  Future<void> authication()
+  async {
+    List<BiometricType> availableBiometrics ;
+    try {
+      availableBiometrics = await localAuth.getAvailableBiometrics();
+    } on PlatformException catch (e) {
+      'device not supported';
+    }
+    try{
+      didAuthenticate = await localAuth.authenticate(
+        localizedReason: 'Please authenticate to access secure data',
+      );
+      didAuthenticate = didAuthenticate;
       notifyListeners();
-    } else {
-      isVerified = false;
-      notifyListeners();
+    }on PlatformException catch(e)
+    {
+      print(e);
     }
   }
 }

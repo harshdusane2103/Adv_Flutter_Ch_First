@@ -1,11 +1,13 @@
 
-class GallrayModal
+import 'package:flutter/material.dart';
+
+class GallrayModel
 {
   String? name;
   String? image;
   String? Qunatay;
 
-  GallrayModal({this.name,this.image,this.Qunatay});
+  GallrayModel({this.name,this.image,this.Qunatay});
 
 
 }
@@ -96,5 +98,12 @@ List HiddenList=[
   {'image': 'asstes/image/h14.webp',},
   {'image': 'asstes/image/h15.webp',},
   {'image': 'asstes/image/h16.webp',},
+
+];
+List<PopupMenuItem> popMenu = [
+  PopupMenuItem(
+    value: 0,
+    child: Text('Hide Images'),
+  ),
 
 ];

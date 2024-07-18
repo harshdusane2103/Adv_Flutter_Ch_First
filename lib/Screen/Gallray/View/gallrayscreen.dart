@@ -1,14 +1,17 @@
+
+
 import 'package:adv_fullter_ch1/Screen/Gallray/Modal/modal.dart';
 import 'package:adv_fullter_ch1/Screen/Gallray/Provider/provider.dart';
 import 'package:adv_fullter_ch1/Screen/pr_1.4/View/Hidden_photos.dart';
 import 'package:flutter/material.dart';
-import 'package:local_auth/local_auth.dart';
+
 import 'package:provider/provider.dart';
 class GallrayScreen extends StatelessWidget {
   const GallrayScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    GalleryProvider galleryProvider=Provider.of<GalleryProvider>(context,listen: false);
     return Scaffold(
       appBar: AppBar(
         leading: Icon(Icons.menu),
@@ -32,21 +35,20 @@ class GallrayScreen extends StatelessWidget {
                 Icon(Icons.search),
 
                   PopupMenuButton(
-                    itemBuilder: (context)=>,
-
+                    itemBuilder: (context)=>popMenu,
+                    initialValue: popMenu,
                       color: Colors.white,
                       shadowColor: Colors.black,
                       surfaceTintColor: Colors.white,
                       elevation: 20,
                       onSelected: (value) async {
-                    if (value == "Hidden images") {
-                      await Provider.of<GalleryProvider>(context, listen: false)
-                          .authentication();
-                      if (Provider.of<GalleryProvider>(context, listen: false)
-                          .isVerified) {
-                        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>HiddenScreen()));
-                      }
-                    }
+                    // if (value == "Hidden Image") {
+                    //   await galleryProvider.authication();
+                    //   if (galleryProvider.didAuthenticate) {
+                    //     Navigator.push(context,MaterialPageRoute(builder: (context)=>HiddenScreen()));
+                    //   }
+                    // }
+                        Navigator.push(context,MaterialPageRoute(builder: (context)=>HiddenScreen()));
                   },
                   // Navigator.of(context).push(MaterialPageRoute(builder: (context)=>HiddenScreen()));
                 child: Icon(Icons.more_vert)),
