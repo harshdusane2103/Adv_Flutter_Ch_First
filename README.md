@@ -121,6 +121,15 @@
     <video src="https://github.com/user-attachments/assets/d420d490-6d5c-48bc-9b7a-4f93f0831be4"></video>
  </P>
 
+ <h3 align="center">⚡Photo Gallery With Biometric Authentication ⚡</h3>
+
+
+ <P>
+     <img src="https://github.com/harshdusane2103/Adv_Flutter_Ch_First/blob/master/g1.png" width=21%,heigth=35%>
+    <img src="https://github.com/harshdusane2103/Adv_Flutter_Ch_First/blob/master/g2.png" width=21%,heigth=35%>
+    <video src="https://github.com/user-attachments/assets/d420d490-6d5c-48bc-9b7a-4f93f0831be4"></video>
+ </P>
+
 
 
 
