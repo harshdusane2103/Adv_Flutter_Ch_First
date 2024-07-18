@@ -42,13 +42,12 @@ class GallrayScreen extends StatelessWidget {
                       surfaceTintColor: Colors.white,
                       elevation: 20,
                       onSelected: (value) async {
-                    // if (value == "Hidden Image") {
-                    //   await galleryProvider.authication();
-                    //   if (galleryProvider.didAuthenticate) {
-                    //     Navigator.push(context,MaterialPageRoute(builder: (context)=>HiddenScreen()));
-                    //   }
-                    // }
+                    if (value == 0) {
+                      await galleryProvider.authication();
+                      if (galleryProvider.didAuthenticate) {
                         Navigator.push(context,MaterialPageRoute(builder: (context)=>HiddenScreen()));
+                      }
+                    }
                   },
                   // Navigator.of(context).push(MaterialPageRoute(builder: (context)=>HiddenScreen()));
                 child: Icon(Icons.more_vert)),
