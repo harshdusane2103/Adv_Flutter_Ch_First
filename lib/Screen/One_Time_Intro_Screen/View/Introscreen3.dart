@@ -1,6 +1,6 @@
-import 'package:adv_fullter_ch1/Screen/PR_1.6_Task_2/Provider/Introprovider.dart';
-import 'package:adv_fullter_ch1/Screen/PR_1.6_Task_2/View/HomeScreen.dart';
-import 'package:adv_fullter_ch1/Screen/PR_1.6_Task_2/View/Introscreen2.dart';
+
+import 'package:adv_fullter_ch1/Screen/One_Time_Intro_Screen/Provider/Introprovider.dart';
+import 'package:adv_fullter_ch1/Screen/One_Time_Intro_Screen/View/HomeScreen.dart';
 import 'package:adv_fullter_ch1/Utils/color.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';

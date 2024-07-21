@@ -1,11 +1,14 @@
-import 'package:adv_fullter_ch1/Screen/PR_1.6_Task_2/View/Introscreen2.dart';
+import 'package:adv_fullter_ch1/Screen/One_Time_Intro_Screen/View/Introscreen3.dart';
+
 import 'package:adv_fullter_ch1/Utils/color.dart';
 import 'package:flutter/material.dart';
-class IntroScreen1 extends StatelessWidget {
-  const IntroScreen1({super.key});
+class IntroScreen2 extends StatelessWidget {
+  const IntroScreen2({super.key});
 
   @override
   Widget build(BuildContext context) {
+
+
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
@@ -19,22 +22,22 @@ class IntroScreen1 extends StatelessWidget {
         child: Column(
           children: [
             Container(
-              height: 420,
-              width: 380,
+              height: 360,
+              width: 360,
               decoration: BoxDecoration(
-                image: DecorationImage(
-                  fit: BoxFit.cover,
-                  image: AssetImage('asstes/image/image1.png'),
-                )
+                  image: DecorationImage(
+                    fit: BoxFit.cover,
+                    image: AssetImage('asstes/image/image2.png'),
+                  )
               ),
 
             ),
             SizedBox(height: 10,),
-            Text('Delivery to your home',style: TextStyle(color: primaryColor,fontWeight: FontWeight.bold,fontSize: 32),),
+            Text('Prepared by exparets',style: TextStyle(color: primaryColor,fontWeight: FontWeight.bold,fontSize: 32),),
             SizedBox(height: 20,),
-            Text('From doorstep to dinner table in no time. ',style: TextStyle(color: primaryColor,fontSize: 18),),
-            Text('Discover convenience with every bite.',style: TextStyle(color: primaryColor,fontSize: 18),),
-            SizedBox(height: 100,),
+            Text('Delicious meals, delivered fast.Welcome to your ',style: TextStyle(color: primaryColor,fontSize: 18),),
+            Text(' new favorite way to dine.',style: TextStyle(color: primaryColor,fontSize: 18),),
+            SizedBox(height: 80,),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -42,22 +45,21 @@ class IntroScreen1 extends StatelessWidget {
                   height: 60,
                   width: 120,
                   decoration: BoxDecoration(
-                    color: SecondaryColor,
-                    borderRadius: BorderRadius.only(topRight: Radius.circular(25),bottomRight: Radius.circular(25))
+                      color: SecondaryColor,
+                      borderRadius: BorderRadius.only(topRight: Radius.circular(25),bottomRight: Radius.circular(25))
                   ),
                   child: Center(child: Text('Skip',style: TextStyle(color: primaryColor,fontWeight: FontWeight.bold),)),
                 ),
-                InkWell(onTap: () {
+                InkWell( onTap: () {
                   Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => IntroScreen2()));
-
+                      builder: (context) => IntroScreen3()));
                 },
                   child: Container(
                     height: 60,
                     width: 120,
                     decoration: BoxDecoration(
-                      color: primaryColor,
-                      borderRadius: BorderRadius.only(topLeft: Radius.circular(25),bottomLeft: Radius.circular(25))
+                        color: primaryColor,
+                        borderRadius: BorderRadius.only(topLeft: Radius.circular(25),bottomLeft: Radius.circular(25))
                     ),
                     child: Center(child: Text('Next',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),)),
                   ),
@@ -67,7 +69,7 @@ class IntroScreen1 extends StatelessWidget {
           ],
         ),
       ),
-      
+
     );
   }
 }
